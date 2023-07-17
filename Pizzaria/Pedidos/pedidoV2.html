@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+    <head>  
+        <title>Pizzaria da Malu</title>
+        <style>
+            body {
+                  background-image: url(../pz_fundo.png)
+
+            }
+            img {
+                display: block; margin-left: auto; margin-right: auto;
+            }
+            form {
+                background-color: red; margin:auto; width:70%;
+                border-radius: 25px;
+            }
+            p {
+                margin-left: 20px; margin-top: 10px; margin-bottom: 10px; width: 100%; 
+                color:white; font-size: 25px; font-weight: bold;
+            }
+            label {
+                color:yellow; font-size: 20px; font-weight: bold;
+            }
+            .item {
+                margin-left: 50px;
+            }
+            .tamanho {
+                margin-left: 100px;
+            }
+            .destaque {
+                text-align: center; color:white; font-weight: bold; font-size: 30px;
+                border-radius: 25px; border-style: double; background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="imgcentral">
+            <img src="../pz_logo.png"/>
+        </div>
+        <p class="destaque">Faça seu Pedido</p>
+        <a href="../cardápio.html">Cardapio</a>
+        <!-- Início do Formulário 
+             ==================== -->
+        <!-- Esta é uma versão mais simples de formulário utilizando apenas
+             três variações de campos da tag <input>: radio, checkbox e text
+             --------------------------------------------------------------- -->
+        <form action="javascript:alert('Pedido enviado!')">
+            <p>Escolha o(s) sabor(es) de pizza:</p>
+            <input type="checkbox" class="item" name="pizza1" value="marguerita">
+            <label for="pizza1">Pizza Marguerita</label>
+                <input type="radio" class="tamanho" name="tamanho_pz1" value="media">
+                <label for="tamanho_pz1">Média</label>
+                <input type="radio" name="tamanho_pz1" value="grande">
+                <label for="tamanho_pz1">Grande</label><br>
+
+            <input type="checkbox" class="item" name="pizza2" value="calabresa">
+            <label for="pizza2">Pizza Calabreza</label>
+                <input type="radio" class="tamanho" name="tamanho_pz2" value="media">
+                <label for="tamanho_pz2">Média</label>
+                <input type="radio" name="tamanho_pz2" value="grande">
+                <label for="tamanho_pz2">Grande</label><br>
+    
+            <input type="checkbox" class="item" name="pizza3" value="4queijos">
+            <label for="pizza3">Pizza Quatro Queijos</label>
+                <input type="radio" class="tamanho" name="tamanho_pz3" value="media">
+                <label for="tamanho_pz3">Média</label>
+                <input type="radio" name="tamanho_pz3" value="grande">
+                <label for="tamanho_pz3">Grande</label><br>
+        
+            <input type="checkbox" class="item" name="pizza4" value="frango">
+            <label for="pizza4">Pizza de Frango com Catupiri</label>
+                <input type="radio" class="tamanho" name="tamanho_pz4" value="media">
+                <label for="tamanho_pz4">Média</label>
+                <input type="radio" name="tamanho_pz4" value="grande">
+                <label for="tamanho_pz4">Grande</label><br>
+
+            <p>Quer uma bebida?</p>
+            <input type="checkbox" class="item" name="bebida1" value="sucolaranja">
+            <label for="bebida1">Suco de Laranja</label>
+                <input type="radio" class="tamanho" name="tamanho_beb1" value="media">
+                <label for="tamanho_beb1">400 ml</label>
+                <input type="radio" name="tamanho_beb1" value="grande">
+                <label for="tamanho_beb1">500 ml</label><br>
+        
+            <p>Onde vamos entregar?</p>
+            <input type="text" class="item" name="enderecoPedido" size="100">
+
+            <br><br><br>
+            <input type="submit" name="submit" value="Enviar Pedido">
+            </div>
+        </form>
+        <!-- Fim do Formulário -->
+        <p class="destaque">Contato: (71)98765-4321</p>
+    </body>
+</html>
